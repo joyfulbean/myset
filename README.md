@@ -31,6 +31,7 @@ apply plugins
 apply rc files
 ##### Explanation of rc files:
 **.zshrc**: can change the theme
+
 **.zsh_aliases**: apply aliases 
   - source ~/.zshrc : src
   - tmux: t
@@ -40,7 +41,9 @@ apply rc files
   - l: ls
   - ls -a: la
   - git: g
+
 **.gitconfig**: shortened git command and set the color for git command
+
   - commit: c
   - commit -m :  cm
   - clone : clone
@@ -54,7 +57,9 @@ apply rc files
   - pull: pl
   - remote add origin: rao
   - diff : d 
+
 **.vimrc**: set the vim, shortcut-key, colors
+
 **.tmux.conf**: set shortcut-key, colors
 
 
