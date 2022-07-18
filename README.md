@@ -4,17 +4,11 @@
 
 ### 설치 파일 설명
 
-#### 1) joyful_shell.sh
+#### 1) joyful_shell.sh installation
+` ./joyful_shell.sh`
 
-install
-> ./joyful_shell.sh
+#### 2) updaterc.sh installation
+` ./updaterc.sh`
 
-#### 2) updaterc.sh
-
-install
-> ./updaterc.sh
-
-#### 3) minikubeset.sh
-
-install
-> ./minikubeset.sh
+#### 3) minikubeset.sh installation
+` ./minikubeset.sh`
