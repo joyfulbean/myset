@@ -23,14 +23,29 @@ case "$os_type" in
 		;;
 	"amzn")
 		sudo yum update -y
-		$SUDO yum -y -qq install git zsh vim tmux unzip curl wget nodejs npm ruby-full python3 python3-pip bpython autojump fonts-powerline
+		$SUDO yum -y -qq install git zsh vim tmux unzip curl wget python3 python3-pip
+		# clone
+		[[ ! -d ./autojump ]] &&
+                git clone https://github.com/wting/autojump.git
+		[[ ! -d ./fonts ]] &&
+		git clone https://github.com/powerline/fonts.git --depth=1
+		# install
+                cd fonts
+                ./install.sh
+                # clean-up a bit
+                cd ..
+                rm -rf fonts
+                cd autojump
+                ./install.py
+		cd ..
+
 		;;
 	esac
 
-os_version=$(lsb_release -r |cut -f2)
-INT=$((os_version))
+#os_version=$(lsb_release -r |cut -f2)
+#INT=$((os_version))
 #echo "${os_version}"
-new_version=19.04
+#new_version=19.04
 
 
 #
@@ -93,7 +108,7 @@ fi
 [[ ! -d ~/.oh-my-zsh/plugins/zsh-autosuggestions ]] && \
     git clone -q https://github.com/zsh-users/zsh-autosuggestions \
         ~/.oh-my-zsh/plugins/zsh-autosuggestions
-[[ ! -d ~/.oh-my-zsh/plugins/zsh-syntax-highlighting ]] && \
+[[ ! -d ~/.oh-my-zsh/plugins/zsh-syntax-highlihgting ]] && \
     git clone -q https://github.com/zsh-users/zsh-syntax-highlighting \
         ~/.oh-my-zsh/plugins/zsh-syntax-highlihgting
 exec zsh -l
