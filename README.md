@@ -2,7 +2,7 @@
 
 > Linux Ubuntu와 Amazon Linux 지원 
 
-### 설치 방법
+### How to Install
 
 #### 1) joyful_shell.sh installation
 ` ./joyful_shell.sh`
@@ -15,7 +15,7 @@
 
 ---
 
-### 파일 설명
+### Explanation of Each Files
 
 #### 1) Waht joyful_shell.sh does?
 
@@ -62,9 +62,9 @@ apply rc files
 
 **.tmux.conf**: set shortcut-key, colors
 
-
 #### 2) Waht updaterc.sh does?
 update all rc files under the current directory
 
 #### 3) Waht minikubeset.sh does?
 install minikube in Amazon Linux
+
