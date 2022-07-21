@@ -23,7 +23,7 @@ case "$os_type" in
 		;;
 	"amzn")
 		sudo yum update -y
-		$SUDO yum -y -qq install git zsh vim tmux unzip curl wget python3 python3-pip
+		$SUDO yum -y -qq install git zsh vim tmux unzip curl wget python3 python3-pip util-linux-user
 		# clone
 		[[ ! -d ./autojump ]] &&
                 git clone https://github.com/wting/autojump.git
@@ -111,7 +111,7 @@ fi
 [[ ! -d ~/.oh-my-zsh/plugins/zsh-syntax-highlihgting ]] && \
     git clone -q https://github.com/zsh-users/zsh-syntax-highlighting \
         ~/.oh-my-zsh/plugins/zsh-syntax-highlihgting
-exec zsh -l
+#exec zsh -l
 $SUDO chsh -s $(which zsh)
 
 #

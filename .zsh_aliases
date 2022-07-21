@@ -21,3 +21,7 @@ alias py3=python3
 alias q=exit
 alias tldr='tldr -t base16'
 alias joy="cd ~"
+alias k="kubectl"
+alias kpa="kubectl get pods -A -n kafka"
+alias ksvc="kubectl get svc -n kafka"
+alias kp="kubectl apply"
