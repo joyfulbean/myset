@@ -112,7 +112,7 @@ fi
     git clone -q https://github.com/zsh-users/zsh-syntax-highlighting \
         ~/.oh-my-zsh/plugins/zsh-syntax-highlihgting
 #exec zsh -l
-$SUDO chsh -s $(which zsh)
+#$SUDO chsh -s $(which zsh)
 
 #
 # install rc files
@@ -152,4 +152,4 @@ if [[ ! -f ~/.vim/autoload/plug.vim ]]; then
     vim +PlugInstall +qall
 fi
 
-exec zsh -l
+$SUDO chsh -s $(which zsh) ec2-user
