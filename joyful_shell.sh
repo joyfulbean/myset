@@ -37,8 +37,8 @@ case "$os_type" in
                 rm -rf fonts
                 cd autojump
                 ./install.py
-		cd ..
-
+                cd ..
+                rm -rf autojump
 		;;
 	esac
 
@@ -152,4 +152,4 @@ if [[ ! -f ~/.vim/autoload/plug.vim ]]; then
     vim +PlugInstall +qall
 fi
 
-
+exec zsh -l
