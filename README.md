@@ -13,6 +13,9 @@
 #### 3) minikubeset.sh installation
 ` ./minikubeset.sh`
 
+#### 4) start minikube
+`minikube start --driver=none --kubernetes-version=v1.23.0 --force`
+
 ---
 
 ### Explanation of Each Files
