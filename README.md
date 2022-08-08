@@ -18,6 +18,8 @@
 
 ---
 
+> Due to Recent [issue](https://github.com/kubernetes/minikube/issues/14724) related to minikube, must put `version info`.
+
 ### Explanation of Each Files
 
 #### 1) Waht joyful_shell.sh does?
